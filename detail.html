@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		 *{margin: 0;padding: 0;}
+		 #header{width: 100%; min-width:900px;margin:0 auto;}
+	.content-wrap{width:966px;height:675px;background:#fbfaf9; margin:0 auto;} 
+	.title{width:966px;height:38px;background:#fbfaf9;font-size:12px;line-height:38px;}
+	.title span{font-size:16px;margin-left:5px;margin-right:5px;}
+	.main-wrap{height:438px;}
+	.boost{width:380px;height:438px;background:#ffffff;float:left;position:relative;
+	       }
+	.boost img{float: left;position: absolute;}
+	.boost .post,.over{left:80px;top:30px;width:200px;height:360px;  }
+	 
+	.boost .over{display: none;}
+	.labor{width:561px;height:438px;background:#fbfaf9;float:left;margin-left:24px;}
+	
+	.boost .previous{position:absolute;left: 0;top:180px;font-size:60px;color:#f0efee;}
+	.boost .next{position:absolute;right: 0;top:180px;font-size:60px;color:#f0efee;}
+	.boost .mask{width: 360px;height:235px;background:transparent;position:absolute;}
+	.boost .amplify{width:380px;height: 438px;background:transparent;position:absolute;
+	       left:380px;display: none;z-index:1;}
+	.amplify img{width: 400px;height: 600px;}
+	.amplify .last{display: none;}
+	.sub div{width:45px;height:20px;background:blue;color:#ffffff;float:left;font-size:14px;padding-left:5px;
+	         box-sizing:border-box;}
+	.sub div:after{content: "";border-top:4px solid white;border-bottom:4px solid transparent;
+	         border-left:4px solid transparent;border-right:4px solid transparent;position:relative;
+	          left:2px; top:12px;}
+	.labor .sub span{font-size:15px;}
+	 .labor .under{width:560px;height:38px;background:#fbfaf9;font-size:14px;margin-top:25px;}
+	      
+	  .labor .under img{position: relative;left:12px;top:7px;}
+	  .labor .menu{width:492px;height:145px;border: 1px solid red;position:absolute; background: red;display: none;}
+	  
+	 .labor ul li{font-size:14px;list-style: none;margin-top:26px;position:relative;}
+	 .labor ul li .back{width:65px;height: 20px; background: red;border-radius:5px;margin-left:6px;}	
+	  .labor ul li .color{margin-left:235px;color:blue;position:relative;} 
+	  .labor ul li .color:after{content: "";border-top:6px solid blue;border-bottom:6px solid transparent;
+	         border-left:6px solid transparent;border-right:6px solid transparent;position:relative;
+	          top:12px; left:3px;}
+	       
+	      .labor ul li .color:hover   .menu{
+	      	display: block;
+	      }    
+	  .labor ul li .upper{font-size:28px;color: red;}
+	 .labor .shoping{width:560px;height:172px;background:#ffffe8;margin-top:16px;
+	               border: 1px dashed #fec083;    padding-top:14px;box-sizing:border-box;padding-left:14px;}
+	 .shoping select{width:93px;height:26px;margin-left: 5px;}
+	 .shoping .red{color: red;margin-left:5px;}
+	 .shoping button{width:18px;height:18px;font-size:14px;font-weight:bold;margin-left:5px;}
+	 .shoping input{width: 42px;height: 20px;text-align:center;margin-left:5px;}
+	 .shoping ul li div{width:212px;height:45px; background:red;text-align:center;
+	         line-height:45px;font-size:24px;color:white;}
+	  .shoping ul li{margin-top:18px;}
+	  .explain{font-size:14px;margin:10px 0 0 16px;}
+	  .cion{width:380px;height:72px;background:#fbfaf9;margin-top:10px;}
+	  .cion li{list-style: none;float:left;margin-left:15px;}
+	  .cion li p{width:16px;height:50px;background:white;margin-top:12px;
+	               background:url(image/QQ截图20170713091402.png) no-repeat;}
+	  .cion li p.next{;transform:rotate(360deg);margin-left:130px;}
+	  .cion li p img{width:16px;height:50px;}
+	  .cion li img{width:70px;height:70px;}
+	   .before{opacity: 0.5;}
+	  .label{clear: both;font-size:14px;margin-left:50px;margin-top:28px;}
+	  .label span{margin-left: 10px;}
+	  .symbol{margin-left: 50px;margin-top:20px;}
+	  #message{width:962px;height:208px;background:white;margin:0 auto;}
+	  .status{height:42px;background:#895c4d;line-height:42px;text-align:center;}
+	  .status p{width:142px;float:left;color: white;}
+	  .status ul{width:820px; height:41px;background:#f3f0ed;float:left;font-size:14px;}
+	  .status ul li{list-style: none;float: left;}
+	  .status ul li span{margin-left:40px;}
+	  .status ul .car{width:102px;height:27px;background:#e04949;float: right;line-height:27px;margin:8px 8px 0 0;color: white;}
+	  .status ul .car img{float: left;margin-left:5px;margin-top:2px;vertical-align: middle;}
+	  #mater-wrap{width: 962px;height: 700px;background: white;margin:0 auto;}
+		</style>
+		<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/detail.js" ></script>
+	</head>
+	<body>
+		<div id="header"></div>
+	<div class="content-wrap">
+		<div class="title"><a>选酒中心</a><span>></span><a>红葡萄酒</a><span>></span>
+			<a>干酒</a><span>></span><a>金羊干红葡萄酒-6瓶装</a></div>
+		<div class="main-wrap">
+	      <div class="biger">
+			<div class="boost">
+				<img src="image/5630445_220x360.png" class="post"/>
+				<img src="image/3458906_60x98.png"   class="over"/>
+				
+				
+				<div class="previous"><</div> 
+				<div class="next">></div>
+				<div class="mask"></div>
+				
+				<div class="amplify">
+					 
+					 	<img src="image/5630445_380x620.png" class="first"/>
+					 	<img src="image/3458906_380x620.png"  class="last"/>
+					
+				</div>
+			</div>
+			<div class="labor">
+				<div class="sub"><div>组合</div><span>金羊干红葡萄酒-6瓶装</span></div>
+				<div class="under">
+				<span>商品评分:</span><a><img src="image/QQ截图20170712172801.png"/></a><span style="margin-left:15px;">评论数：138</span>
+				<span style="margin-left:10px;">搭配菜肴:</span><span style="margin-left:30px;">近期抛出数&nbsp;1807</span>
+				</div>
+				<ul>
+					<li><span>促销信息：</span><span class="back">商品折扣</span><span style="margin-left:3px;">明星单品促销特惠</span> 
+						<span class="color">更多优惠
+						<div class="menu"><!--<img src="image/QQ截图20170712165543.png" />--></div></span> </li>
+					<li><span>促销价:</span><span style="color: red;">￥</span><span class="upper">169.0</span></li>
+				</ul>
+				
+				<div class="shoping">
+					<ul>
+					<li><span>配送城市:</span><select><option>广东</option></select><span class="red">广东</span>&nbsp;<span>有货&nbsp;上海分仓发货</span></li>
+					<li style="margin-top:10px;"> <span>选择数量:</span><button>-</button><input type="text" value="1"/><button>+</button></li>
+					<li><div>加入购物车</div></li>
+					</ul>
+				</div>
+				<div class="explain">说明：此商品暂时不用折扣劵，请谅解 </div>
+			</div>
+		</div>
+		</div>
+		    <ul class="cion">
+		    	<li><p></p></li>
+		    	<li><img  src="image/QQ截图20170712203137.png"/></li>
+		    	<li><img  src="image/QQ截图20170712203031.png"/></li>
+		    	<li><p class="next"><img src="image/QQ截图20170713091425.png"/> </p></li>
+		    </ul>
+		    <div class="label"><span>商品ID：</span><span>6229459</span></div>
+		    <div class="symbol"><img src="image/QQ截图20170712203422.png" /> </div>
+	</div>
+		<div id="message">
+			  <div class="status">
+			  	<p>商品详情</p><ul><li><span>用户评价</span><span>|</span><span>商品咨询</span><span>|</span></li>
+			  		  <li class="car"><img src="image/QQ截图20170713132548.png" />加入购物车</li></ul>
+			  </div>
+			  <div class="pian"><img src="image/QQ截图20170714085607.png" /></div>
+		</div>
+		<div id="mater-wrap"><img src="image/QQ截图20170714085253.png" /> </div>
+		
+		<div id="footer"></div>
+	</body>
+	<script type="text/javascript">
+//		$(function(){
+//			$("#header").load("head.html");
+//	      
+//	      		 $(".boost").hover(function(){
+// 	 	$(".amplify").show();
+// 	 	
+// 	 },function(){ $(".amplify").hide()})
+// 	
+//
+// 	var maskWidth =$(".mask").width();
+//   var maskHeight=$(".mask").height();
+// 
+// 	$(".boost").mousemove(function(e){
+// 	 	var x=e.pageX-$(this).offset().left-maskWidth/2;
+// 	 	var y=e.pageY-$(this).offset().top-maskHeight/2;
+// 	 	
+// 	 	 x=x<0?0:x;
+// 	 	 y=y<0?0:y;
+// 	 	 
+// 	 	 var max_x=$(this).width()-maskWidth;
+// 	 	 
+// 	 	 var max_y=$(this).height()-maskHeight;
+// 	 	 
+// 	 	 x=x>max_x?max_x:x;
+// 	 	 y=y>max_y?max_y:y;
+// 	 	 console.log(x)
+// 	 	 
+// 	    $(".mask").css("left",x+"px");
+// 	 	$(".mask").css("top",y+"px");
+// 	 
+// 	 	 var bigli_x=$(".first").width()/$(this).width();
+// 	 	 var bigli_y=$(".first").height()/$(this).height();
+// 	 	$(".first").css("left",-x*bigli_x+"px");
+// 	 	$(".first").css("top",-y*bigli_y+"px");
+// 	 	 
+// 	 	 })
+// 	 	
+// 	 	
+// 	 	
+// 	 	
+// 	 
+//			
+//})
+		
+		
+	</script>
+</html>
+6

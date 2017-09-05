@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			#max-wrap{
+				width: 100%;
+			   min-width: 1100px;
+			}
+			#min-one{
+				width: 100%; font-size: 12px;
+			    height:30px; line-height:30px;
+				background: #f1eeed;
+			}
+			#min-two{
+				width: 100%;
+				height: 120px;
+		        
+			}
+		#min-two img{width: 100%;height:120px;}
+
+			#min-three{
+				width:100%;
+				height:102px;
+				background: #f1eeed;
+				
+			}
+	#-first{margin-left:100px; float:left; }
+	#-mindle{float:left;margin-left:8px;}			
+	#-mindle a{margin:5px 5px 0 5px;}		
+#min-one #-last{ float:right;margin-right:100px;}
+	#-last a{margin-left:5px;}
+	#-last span{margin-left:8px;}
+	#-last a.content:after{content: "";border-top:5px solid black;
+	   border-left: 5px solid transparent;border-right:5px solid transparent;
+	    border-bottom: 5px solid transparent;position:relative;top:10px;
+	    left:5px;margin-right:5px;}
+	#-last a img{height: 14px;position:relative;top:2px;background:#f1eeed;}
+	#-last .content{position: relative;}
+	#-last .content ul{width:100px;height:100px;position:absolute;
+	    background: white; left:-10px;top:22px;padding:10px 0;display:none;}
+	#-last .content ul:before{content: "";border:8px solid transparent;border-bottom:8px solid #fff;
+	         position:absolute;left:25px;top:-15px}
+	#-last .content ul li{list-style: none;color:black;line-height:25px;padding-left:10px;}
+	/*hover 事件*/
+	#-last .content ul li:hover{background:#d3161b;}
+	/*#-last .content:hover .content ul{display:block;}*无效果/
+	
+	/*手机版二级菜单*/
+	#-last .contain{position:relative;}
+	#-last .contain ul{width:280px;height:180px;background:orange;position:absolute;left:-10px;z-index:1; display:none;}
+	#-last .contain ul li{width:100%;list-style:none;height:30px;background:#fff;padding-left:10px;}
+	#-last .contain ul .cion{height:125px;background:silver;}
+	#-last .contain ul .cion .icon-wrap img{width:112px;height:114px;float:left;margin:5px 10px 5px 0;} 
+	#-last .contain ul .cion .title-wrap{float:left;}
+	#-last .contain ul .cion .title-wrap img{display:block;width:138px;height:38px;}
+	#-last .contain ul:before{content: "";border:8px solid transparent;border-bottom:8px solid #fff;
+	                position:absolute;left:25px;top:-15px}
+	/*手机版 ;hover事件*/
+
+	
+	.min-wrap{width:1200px;margin: 0 auto;}		
+	.last-one{width:340px;height:102px; background: gray;float:left;
+	   margin-left:0px;}
+	.last-one img{height: 102px;}
+	#min-three .graph{ width:200px; height:102px;margin-left:30px;  float: left;
+	                   text-align:center;}
+	
+	.last-two{width: 460px;height: 60px; background:#f1eeed;float:left;
+	           margin-left:20px;margin-top:30px;}
+	.last-two a{font-size:12px; margin-left: 16px;}
+	
+	.last-min{width: 120px;height:32px;background: brown;
+	         float:right;margin-top: 30px;position: relative;}
+	.last-min img{width:120px;height: 34px;}
+	.last-min .hidden{width: 350px;line-height: 50px;border:1px solid #BBBBBB;
+	   background:#fff;position: absolute;left:-233px;top:34px;z-index:1;
+	    text-align: center;display:none;}
+	.last-min .hidden a{color:#d3161b;}
+	.last-min .dim{width:34px;height:40px;background:transparent;position:absolute;
+	            z-index:1;left:-32px;top:34px;}
+	/*hover事件*/
+	.last-min:hover .hidden{display: block;}
+	.last-min:hover .dim{border-top:1px solid #fff;}
+	      .textValue{width:380px;height:32px;border:1px solid red;}
+	      .find{width:76px;height:34px;background:red;border: none;cursor: pointer;}
+	     a:hover{text-decoration: underline;color:red;}
+	.head-in{width:100%;height:36px;background:#d3161b;}
+	 .head-in #list1{width:200px;height:36px;background:#bc0001;float:left;
+	                line-height: 36px;}
+	 .head-in #list1 img{margin-left:8px;margin-top:6px;float:left;}
+	 .head-in #list1 span{margin-left:6px;font-size:16px;color:white;letter-spacing:5px;}
+	 .head-in ul li.list2{width:72px;height:36px;background:#d3161b;}
+	  .head-in ul li.list2:after{content:"";} 
+	  .head-in .nav-wrap{width:1036px;margin: 0 auto;}
+	.head-in ul li{width:92px;height:36px;background:#d3161b;list-style: none;
+	      float: left;font-size:15px;color: white;text-align: center;line-height:36px; position: relative;}
+	.head-in ul li:after{width: 10px;	content: "丨";position: absolute;right:-2px;color:black;}
+	.head-in ul li:hover{background:#a11011;}
+	.head-in #list1:hover{background:#a11011;}
+	      
+	      	
+	      
+		</style>
+	</head>
+	<body>
+		<div id="max-wrap">
+			<div id="min-one">
+				<div id="-first">
+				<span style="font-size: 13px;color: red;">10087454</span>
+				<span>位会员的选择</span>
+			     </div>
+				<div id="-mindle">
+				 <a>登录</a><span>|</span> <a>注册</a>
+				</div>
+				<div id="-last">
+				<a>会员俱乐部</a><span>|</span>
+				<a>签到</a><span>|</span>
+				<a class="content">我的账户
+					<ul><li>我的订单</li><li>我的存酒库</li><li>我的优惠劵</li><li>我的收藏夹</li></ul>
+				</a><span>|</span>
+				<a class="contain"><img src="image/1072606.gif" />手机版
+				   <ul>
+				   	<li style="color: black;">APP首单 <span style="color:red;margin-left:3px;">满100得100</span></li>
+				   	<li class="cion">
+				   		<div class="icon-wrap"><img src="image/red-code.png" /></div>
+				   		<div class="title-wrap">
+				   		<p style="color:black;">下载也买酒客户端</p>
+				   		<img style="margin-top:-5px;" src="image/android.png" />
+				   		<img style="margin-top:20px;" src="image/ios.png" />	
+				   		</div>
+				   	    </li>
+				   	<li style="color:blue;">了解更多客户要求！</li>
+				   </ul> 
+				</a><span>|</span>
+				<a>红酒交易中心</a><span>|</span>
+				<a>设置勿扰</a>
+				</div>	
+			</div>
+		  
+			<div id="min-two"><img src="image/QQ截图20170630085924.png" /></div>
+			
+			<div id="min-three">
+			 <div class="min-wrap">
+			 <div class="last-one"><img src="image/QQ截图20170703090522.png" /></div>
+			 <div class="graph"><img src="image/sydt.gif" /></div>
+			 <div class="last-two">
+			 	<input type="text" class="textValue" value="输入你要查找的商品名称"/><input type="button"value="搜索" class="find"/>
+			 	<a style="margin-left: 0px;">热销期酒补课归来</a>
+			 	<a>红酒交易中心升级公告</a>
+			 	<a>明庄满388减80</a>
+			 	<a>特色陈年老酒</a>
+			 </div>
+			 <!--购物车-->
+			 	<div class="last-min">
+			 		<img src="image/QQ截图20170703090709.png"/>
+			 		<div class="hidden">您的购物车内暂时没有商品，去<a>首页</a>挑选   </div>
+			 		<div class="dim"></div>
+			 	</div>
+			 	</div>
+			  </div>
+			    
+			  <div class="head-in">
+			  	<div class="nav-wrap">
+			  	<div id="list1"><img src="image/QQ截图20170706171500.png"/><span>选酒中心</span></div>
+			  	<ul>
+			  	
+			    <li class="list2">首页</li><li>超值抢购</li><li>精品闪购</li>
+			    <li>明庄特卖</li><li>非常大牌</li><li>香港免税</li>
+			    <li>老酒馆</li><li>全球海淘</li>
+			    <li>身边门店</li>
+			  	</ul>
+			  	</div>
+			  </div>
+		</div>
+	</body>
+	<script src="jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+//			手机版
+			$("#-last .contain").hover(function(){
+				$("#-last .contain ul").css("display","block");
+			},function(){
+				$("#-last .contain ul").css("display","none");
+			});
+			//、我的账户
+			$("#-last .content").hover(function(){
+				$("#-last .content ul").css("display","block");
+			},function(){
+				$("#-last .content ul").css("display","none");
+			});
+			//input输入框获取焦点事件
+			$(".last-two input").focus(function(){
+				$(this).val("");
+				$(this).css("text-indent","5px");
+			})
+		})
+	</script>
+</html>
